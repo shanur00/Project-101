@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@theme {
+  --font-family-inter: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-instrument-serif: "Instrument Serif", ui-serif, serif;
+
+  --font-sans: var(--font-family-inter);
+  --font-serif: var(--font-family-instrument-serif);
+}
+
+* {
+  border-color: rgba(55, 50, 47, 0.08);
+  outline-color: rgba(55, 50, 47, 0.50);
+}
+
+body {
+  background-color: #F7F5F3;
+  color: #37322F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-family-inter);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.backdrop-blur-custom {
+  backdrop-filter: blur(8.25px);
+}
